@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<div>
+    <a th:href="@{/questions/new}">
+        <button>Submit a Question</button>
+    </a>
+</div>
+<div>
+    <a th:href="@{/questions/all}">
+        <button>View all Questions</button>
+    </a>
+</div>
+<div>
+    <a th:href="@{/questions/delete}">
+        <button>Delete a Question</button>
+    </a>
+</div>
+</body>
+</html>

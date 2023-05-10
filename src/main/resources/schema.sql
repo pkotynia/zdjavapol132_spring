@@ -26,3 +26,10 @@ CREATE TABLE author_book (
     a_id INT NOT NULL,
     b_id INT NOT NULL
 );
+
+CREATE TABLE if NOT EXISTS interview_question (
+    question_id INT NOT NULL UNIQUE AUTO_INCREMENT,
+    question VARCHAR(255) NOT NULL,
+    answer VARCHAR(500) NOT NULL,
+    PRIMARY KEY (question_id)
+);
