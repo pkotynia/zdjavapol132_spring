@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add question</title>
+</head>
+<body>
+<form method="post" th:action="@{/questions/submit}">
+    <div>
+        <label>Question</label>
+        <textarea name="question"></textarea>
+    </div>
+    <div>
+        <label>Answer</label>
+        <textarea name="answer"></textarea>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
