@@ -17,7 +17,6 @@ import java.net.URI;
 public class AuthorController {
 
     // Service should go here to implement full MVC
-    @Autowired
     private AuthorJpaRepository repository;
 
     public AuthorController(AuthorJpaRepository repository) {

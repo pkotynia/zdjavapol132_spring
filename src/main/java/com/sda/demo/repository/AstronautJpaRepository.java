@@ -15,8 +15,11 @@ public interface AstronautJpaRepository extends JpaRepository<Astronaut, Integer
 
     List<Astronaut> getAllAstronautsByCraft(String craft);
 
-    @Query(value = "SELECT a.craft, COUNT(*) FROM astronaut a GROUP BY a.craft", nativeQuery = true)
+    @Query(value = "SELECT a.craft, COUNT(*) FROM Astronaut a GROUP BY a.craft")
+    //SQL version
+    //@Query(value = "SELECT a.craft, COUNT(*) FROM astronaut a GROUP BY a.craft", nativeQuery = true)
     List<Object[]> getNumberOfAstronautsPerCraft();
 
+    //HQL version
     // Object[0] -> craft:String Object[1] -> COUNT(*):Long
 }
