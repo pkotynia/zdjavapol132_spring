@@ -14,7 +14,7 @@ public class HelloController {
 
     private AstroService astroService;
 
-    public HelloController(@Qualifier("astroDummyService") AstroService astroService) {
+    public HelloController(@Qualifier("astroWebService") AstroService astroService) {
         this.astroService = astroService;
     }
 
